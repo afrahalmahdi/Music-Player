@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SearchActivity">
+
+    <!-- SearchView -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_view"
+        android:gravity="center|left"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        app:iconifiedByDefault="false"
+        app:queryHint="@string/text_search_hint" />
+
+    <!-- small title for recently search -->
+    <TextView
+        android:id="@+id/recent_searches_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_view"
+        android:text="@string/recent_searches"
+        android:textSize="12sp" />
+
+    <!-- List View of recently search of songs -->
+    <ListView
+        android:id="@+id/search_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recent_searches_id" />
+
+</LinearLayout>

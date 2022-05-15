@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SignupActivity">
+
+    <!-- Profile ImageView -->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/login_form"
+        android:src="@drawable/profile_user" />
+
+    <!-- Header Text -->
+    <TextView
+        style="@style/RegisterHeader"
+        android:textSize="40dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/signup_text" />
+
+    <!-- Title Text of {Full name} -->
+    <TextView
+        style="@style/RegisterTitle"
+        android:text="@string/fullName_title" />
+
+    <!-- LinearLayout for first name and last name editText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+    <!-- First name EditText -->
+    <EditText
+        android:id="@+id/first_name_id"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style="@style/EditTextStyle"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:textSize="13sp"
+        android:background="@drawable/signup_edit_text"
+        android:hint="@string/firstName_hint"/>
+
+        <!-- Last name EditText -->
+        <EditText
+            android:id="@+id/last_name_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:textSize="13sp"
+            android:background="@drawable/signup_edit_text"
+            android:hint="@string/lastName_hint"/>
+    </LinearLayout>
+
+    <!-- Title Text of {Email} -->
+    <TextView
+        style="@style/RegisterTitle"
+        android:text="@string/email_title" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/email_editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="8dp"
+        android:background="@drawable/signup_edit_text"
+        android:hint="@string/your_email_hint"/>
+
+    <!-- Password Text of {Email} -->
+    <TextView
+        style="@style/RegisterTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/password_title" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/password_editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:padding="8dp"
+        android:background="@drawable/signup_edit_text"
+        android:hint="@string/your_password_hint"/>
+
+    <!-- Confirm password EditText -->
+    <EditText
+        android:id="@+id/confirm_password_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:background="@drawable/signup_edit_text"
+        android:hint="@string/Confirm_password_hint"/>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="200dp"
+        style="@style/RegisterButton"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/corner_button"
+        android:text="@string/signup_text"/>
+
+</LinearLayout>

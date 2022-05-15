@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="@dimen/list_item_height"
+    android:paddingBottom="1dp">
+
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/ImageStyle"
+        android:layout_marginStart="16dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/play_icon" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/image"
+        android:paddingStart="16dp"
+        android:orientation="vertical">
+
+        <!-- TextView for name of the song -->
+        <TextView
+            android:id="@+id/song_text_view"
+            style="@style/TextStyle"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="bottom"
+            android:paddingEnd="16dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Hello" />
+
+        <!-- TextView for name of the song -->
+        <TextView
+            android:id="@+id/artists_text_view"
+            style="@style/TextStyle"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="13sp"
+            android:textColor="@color/gray_10"
+            tools:text="Adele" />
+
+    </LinearLayout>
+
+    <!-- CheckBox for favorite the item of the song -->
+    <CheckBox
+        android:id="@+id/favouriteCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/dot_id"
+        android:button="@drawable/sl_favorite_24dp" />
+
+    <!-- ImageView for the item of the song -->
+    <ImageView
+        android:id="@+id/dot_id"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/dots" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground" />
+
+</RelativeLayout>

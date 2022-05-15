@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- Header Text { Search & Discover } -->
+    <TextView
+        android:id="@+id/search_text"
+        style="@style/headerTextStyle"
+        android:layout_alignParentTop="true"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/search_discover_title" />
+
+    <!-- Search Layout -->
+    <LinearLayout
+        android:id="@+id/search_layout"
+        style="@style/Search_view"
+        android:layout_below="@+id/search_text"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner_view"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+        <!-- Search ImageView -->
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search_24" />
+
+        <!-- Hint text for search TextView -->
+        <TextView
+            android:id="@+id/search_TextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center|start"
+            android:paddingEnd="10dp"
+            android:text="@string/text_search_hint"
+            android:textColor="@color/gray_100" />
+    </LinearLayout>
+
+    <!-- ScrollView contain the whole elements inside home page -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_layout"
+
+        android:scrollbars="none"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <!-- RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Header Text { Popular } -->
+            <TextView
+                android:id="@+id/popular"
+                style="@style/headerTextStyle"
+                android:text="@string/search_popular_title" />
+
+            <!-- Start of LinearLayout contain { New Music and Top Music } -->
+            <LinearLayout
+                android:id="@+id/category_layout_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popular"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- New Music category -->
+                <FrameLayout
+                    style="@style/CategoriesStyle"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/corner_new_music">
+
+                    <TextView
+                        android:id="@+id/new_music_id"
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_new_music" />
+                </FrameLayout>
+
+                <!-- Top Music category -->
+                <FrameLayout
+                    style="@style/CategoriesStyle"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_top">
+
+                    <TextView
+                        android:id="@+id/top_id"
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_top" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- End of LinearLayout { New Music and Top Music } -->
+
+            <!-- Start of LinearLayout contain { Arabic Songs and English Songs } -->
+            <LinearLayout
+                android:id="@+id/category_layout_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category_layout_one"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- Arabic Songs category -->
+                <FrameLayout
+                    style="@style/CategoriesStyle"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_arabic_song">
+
+                    <TextView
+                        android:id="@+id/arabic_id"
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_arabic_songs" />
+                </FrameLayout>
+
+                <!-- English Songs category -->
+                <FrameLayout
+                    style="@style/CategoriesStyle"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_english_song">
+
+                    <TextView
+                        android:id="@+id/english_id"
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_english_songs" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- End of LinearLayout contain { Arabic Songs" and English Songs } -->
+
+            <!-- Header Text of { Hot & Trending } -->
+            <TextView
+                android:id="@+id/trending"
+                style="@style/headerTextStyle"
+                android:paddingEnd="5dp"
+                android:layout_below="@+id/category_layout_two"
+                android:text="@string/search_trending_title" />
+
+            <!-- Horizontal RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trending"
+                android:layout_marginBottom="5dp" />
+
+            <!-- Header Text of { Hot & Trending } -->
+            <TextView
+                android:id="@+id/trending2"
+                style="@style/headerTextStyle"
+                android:layout_below="@+id/main_recycler_view"
+                android:text="@string/most_shared_title" />
+
+            <!-- Horizontal RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trending2"
+                android:layout_marginBottom="16dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Music Player</string>
+
+    <!-- Header text for Login [CHAR LIMIT=20] -->
+    <string name="Login_title">Login with your account</string>
+
+    <!-- Hint text for email editText [CHAR LIMIT=20] -->
+    <string name="your_email_hint">Your Email</string>
+
+    <!-- Hint text for password editText [CHAR LIMIT=20] -->
+    <string name="your_password_hint">Your Password</string>
+
+    <!-- Hint text for Confirm password editText [CHAR LIMIT=20] -->
+    <string name="Confirm_password_hint">Confirm Password</string>
+
+    <!-- Text for Login Button CHAR LIMIT=20] -->
+    <string name="login_button">Login</string>
+
+    <!-- Text for Sign Up Text CHAR LIMIT=20] -->
+    <string name="signup_text">Sign Up</string>
+
+    <!-- Title text for full name [CHAR LIMIT=20] -->
+    <string name="fullName_title">Full name</string>
+
+    <!-- Title text for email [CHAR LIMIT=20] -->
+    <string name="email_title">Email</string>
+
+    <!-- Title text for password [CHAR LIMIT=20] -->
+    <string name="password_title">Password</string>
+
+    <!-- Hint text for first name editText [CHAR LIMIT=20] -->
+    <string name="firstName_hint">First Name</string>
+
+    <!-- Hint text for last name editText [CHAR LIMIT=20] -->
+    <string name="lastName_hint">Last Name</string>
+
+    <!-- Header text for search [CHAR LIMIT=20] -->
+    <string name="search_discover_title">Search &amp; Discover</string>
+
+    <!-- Header text for search [CHAR LIMIT=20] -->
+    <string name="search_popular_title">Popular</string>
+
+    <!-- Header text for search [CHAR LIMIT=20] -->
+    <string name="search_trending_title">Hot &amp; Trending</string>
+
+    <!-- Header text for search [CHAR LIMIT=20] -->
+    <string name="most_shared_title">Most Shared</string>
+
+    <!-- Hint text for search view [CHAR LIMIT=20] -->
+    <string name="text_search_hint">Songs, artists, lyrics, playlist...</string>
+
+    <!-- Text view for recent search [CHAR LIMIT=20] -->
+    <string name="recent_searches">Recent Searches</string>
+
+    <!-- Category name for the vocabulary words for new music [CHAR LIMIT=20] -->
+    <string name="category_new_music">New Music</string>
+
+    <!-- Category name for the vocabulary words for top [CHAR LIMIT=20] -->
+    <string name="category_top">Top</string>
+
+    <!-- Category name for the vocabulary words for podcast [CHAR LIMIT=20] -->
+    <string name="category_arabic_songs">Arabic Songs</string>
+
+    <!-- Category name for ramadan [CHAR LIMIT=20] -->
+    <string name="category_english_songs">English Songs</string>
+
+    <!-- Navigation name for home [CHAR LIMIT=20] -->
+    <string name="home_nav">Home</string>
+
+    <!-- Navigation name for favorite [CHAR LIMIT=20] -->
+    <string name="favorite_nav">Favorites</string>
+
+    <!-- Navigation name for account [CHAR LIMIT=20] -->
+    <string name="search_nav">Search</string>
+
+
+</resources>

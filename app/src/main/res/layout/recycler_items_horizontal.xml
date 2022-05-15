@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="125dp"
+    android:layout_height="180dp"
+    android:showDividers="beginning"
+    android:layout_margin="8dp"
+    android:orientation="vertical" >
+
+    <!-- LinearLayout to contain the horizontal RecyclerView -->
+        <ImageView
+            android:id="@+id/horizontal_image"
+            android:layout_width="125dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/conor_maynard" />
+
+    <LinearLayout
+        android:id="@+id/horizontal_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontal_image"
+        android:orientation="vertical">
+
+        <!-- TextView for name of the song -->
+        <TextView
+            android:id="@+id/song_text_view1"
+            style="@style/TextStyle"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="bottom"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Hello" />
+
+        <!-- TextView for name of the song -->
+        <TextView
+            android:id="@+id/artists_text_view2"
+            style="@style/TextStyle"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="13sp"
+            android:textColor="@color/gray_10"
+            android:text="Adele" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground" />
+
+</RelativeLayout>

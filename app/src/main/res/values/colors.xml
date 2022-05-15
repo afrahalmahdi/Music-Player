@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_50">#009eff</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+
+    <color name="purple_500">#FF6200EE</color>
+
+    <color name="purple_700">#FF3700B3</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray">#A8A19E</color>
+
+    <color name="gray_45">#737373</color>
+
+    <color name="light_gray_100">#B3B3B3</color>
+
+    <!-- Background color for the search view -->
+    <color name="light_gray">#f2f2f2</color>
+
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#2196F3</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#1976D2</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Background color for the .... -->
+    <color name="orange">#FD8E09</color>
+
+    <!-- Background color for the ..... -->
+    <color name="grayee">#379237</color>
+
+    <!-- Background color for the ... -->
+    <color name="category_colors">#8800A0</color>
+
+    <!-- Background color for the ... -->
+    <color name="light_blue">#16AFCA</color>
+
+<!--    <color name="blue_46">#1976D2</color>-->
+
+    <!-- Background color for the search view-->
+    <color name="gray_100">#D83C3F41</color>
+
+    <color name="gray_10">#494d50</color>
+
+    <color name="red">#B3323E</color>
+</resources>
