@@ -43,7 +43,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ArabicSongActivity"
-            android:label="@string/category_arabic_songs"
+            android:label=  "@string/category_arabic_songs"
             android:parentActivityName=".MainActivity" >
 
         </activity>

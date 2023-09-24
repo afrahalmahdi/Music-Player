@@ -116,5 +116,5 @@ public class EnglishSongActivity extends AppCompatActivity {
         SongViewHolder.releaseMediaPlayer();
 
         mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
-    }
+    }   
 }
